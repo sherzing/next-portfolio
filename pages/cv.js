@@ -1,11 +1,15 @@
 import React from 'react'
+import Header from '../components/shared/Header'
 
 
 class Cv extends React.Component {
 
     render() {
         return (
-            <h1> Cv class</h1>
+            <div>
+            <Header />
+            <h1>CV class</h1>
+        </div>
         )
     }
 }

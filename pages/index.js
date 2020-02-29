@@ -1,11 +1,16 @@
 import React from 'react'
 
+import Header from '../components/shared/Header'
 
 class Index extends React.Component {
-
+    
     render() {
+        
         return (
-            <h1> Index class</h1>
+            <div>
+                <Header />
+                <h1> Index class</h1>
+            </div>
         )
 
     }
