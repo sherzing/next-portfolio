@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import '../../styles/main.scss'
 
 class Header extends React.Component {
 
@@ -7,6 +8,7 @@ class Header extends React.Component {
         return (
             <React.Fragment>
                 <p className='custom'> I'm a styled element</p>
+                <p className='customFromFile'> I'm a styled element</p>
             <Link href="/">
                 <a>Home</a>
             </Link>
