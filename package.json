@@ -4,9 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next -p 4000",
+    "local": "next -p 4000",
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "next": "^7.0.2",
+    "react": "^16.6.0",
+    "react-datepicker": "^1.8.0",
+    "react-dom": "^16.6.0"
+  }
 }
