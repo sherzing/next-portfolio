@@ -3,12 +3,9 @@ import Link from 'next/link'
 
 class Header extends React.Component {
 
-
     render() {
         return (
             <React.Fragment>
-                <p>{title}</p>
-                {this.props.children}
             <Link href="/">
                 <a>Home</a>
             </Link>
