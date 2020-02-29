@@ -8,7 +8,9 @@ class Index extends React.Component {
         
         return (
             <div>
-                <Header />
+                <Header title={'I am a header Component'}>
+                    <h1>I'm a header subtitle</h1>
+                </Header>
                 <h1> Index class</h1>
             </div>
         )
