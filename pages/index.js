@@ -3,8 +3,8 @@ import BaseLayout from '../components/layouts/BaseLayout'
 
 class Index extends React.Component {
     
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             title: 'I am index page'
         }
@@ -28,7 +28,6 @@ class Index extends React.Component {
     }
 
     render() { 
-        console.log('render')  
         return (
             <BaseLayout>
                 <h1 className='fromPage'>Index class</h1>
