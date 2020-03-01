@@ -1,8 +1,22 @@
 import React from 'react'
+import axios from 'axios'
 import BaseLayout from '../components/layouts/BaseLayout'
 
 class Index extends React.Component {
     
+    static async getInitialProps() {
+        console.log('in get initial props')
+        try {
+            const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1')
+            console.log(response.data)
+            const userData = response.data
+            return {initialData: [1, 2, 3, 4], userData}
+        } catch (err) {
+            console.err(err)
+        }
+        
+    }
+
     constructor(props) {
         super(props)
         this.state = {
@@ -28,10 +42,13 @@ class Index extends React.Component {
     }
 
     render() { 
+        const {userData, initialData } = this.props
+
         return (
             <BaseLayout>
                 <h1 className='fromPage'>Index class</h1>
                 <h2> {this.state.title} </h2>
+                <h2> {userData.title}</h2>
                 <button onClick={ () => this.updateTitle()}>Change title</button>
             </BaseLayout>
         )
