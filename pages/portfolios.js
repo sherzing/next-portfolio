@@ -20,7 +20,12 @@ class Portfolios extends React.Component {
     renderPosts(posts) {
         return posts.map((post) => {
             return (
-                <li>{post.title}</li>
+                <tr>
+                    <td>{post.id}</td>
+                    <td>{post.title}</td>
+                    {/* <td>{post.body}</td>
+                </tr> */}
+                
             )
         })
     }
@@ -31,9 +36,11 @@ class Portfolios extends React.Component {
         return (
             <BaseLayout>
             <h1>Portfolio class</h1>
-            <ul>
+            <table>
+                <tbody>
                 {this.renderPosts(posts)}
-            </ul>
+                </tbody>
+            </table>
             </BaseLayout>
         )
     }
