@@ -6,9 +6,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <React.Fragment>
-                <p className='custom'> I'm a styled element</p>
-                <p className='customFromFile'> I'm a styled element</p>
+            <React.Fragment>   
             <Link href="/">
                 <a>Home</a>
             </Link>
