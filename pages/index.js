@@ -13,8 +13,7 @@ class Index extends React.Component {
             return {initialData: [1, 2, 3, 4], userData}
         } catch (err) {
             console.err(err)
-        }
-        
+        } 
     }
 
     constructor(props) {

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js -p 4000",
+    "dev": "next -p 4000",
     "local": "next -p 4000",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
@@ -16,7 +16,7 @@
     "@zeit/next-sass": "^1.0.1",
     "axios": "^0.18.0",
     "express": "^4.17.1",
-    "next": "^7.0.2",
+    "next": "^9.0.1",
     "node-sass": "^4.13.1",
     "react": "^16.6.0",
     "react-datepicker": "^1.8.0",
