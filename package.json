@@ -24,6 +24,7 @@
     "react": "^16.6.0",
     "react-datepicker": "^1.8.0",
     "react-dom": "^16.6.0",
+    "react-typed": "^1.2.0",
     "reactstrap": "^8.4.1"
   }
 }

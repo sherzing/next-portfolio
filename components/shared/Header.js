@@ -1,7 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import '../../styles/main.scss'
-
 class Header extends React.Component {
 
     render() {
@@ -22,16 +20,6 @@ class Header extends React.Component {
             <Link href="/cv">
                 <a>CV</a>
             </Link>
-            <style jsx>
-            {`
-            a {
-                font-size: 15px
-            };
-            .custom {
-                color: red;
-            }
-            `}
-            </style>
             </React.Fragment>
         )
     }
