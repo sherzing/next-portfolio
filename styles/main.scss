@@ -2,6 +2,7 @@
 
 // PAGES
 @import './index';
+@import './shared/header';
 
 html, body {
     height:100%;
@@ -14,4 +15,8 @@ html, body {
      font-weight: bold;
      letter-spacing: 2px;
      color: white;
+}
+
+.absolute {
+    position: absolute;
 }
