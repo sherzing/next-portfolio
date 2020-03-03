@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import Link from 'next/link'
 import BaseLayout from '../components/layouts/BaseLayout'
-
+import BasePage from '../components/BasePage'
 
 class Portfolios extends React.Component {
 
@@ -14,7 +14,7 @@ class Portfolios extends React.Component {
             const posts = response.data
             return {posts : posts.splice(0, 10)}
         } catch (err) {
-            console.err(err)
+            console.error(err)
         } 
     }
 
@@ -23,7 +23,7 @@ class Portfolios extends React.Component {
             return (
                 <li key={index}>
                 <Link as={`/portfolio/${post.id}`} href={'/portfolio/[id]'}>
-                    <a style={{'fontSize': '20px'}}>{post.title}</a>
+                    <a>{post.title}</a>
                 </Link>
                 </li>
             )
@@ -35,10 +35,12 @@ class Portfolios extends React.Component {
         console.log(this.props)
         return (
             <BaseLayout>
+            <BasePage>
             <h1>Portfolio class</h1>
             <ul>
                 {this.renderPosts(posts)}
             </ul>
+            </BasePage>
             </BaseLayout>
         )
     }

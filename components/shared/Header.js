@@ -58,7 +58,7 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar className="port-navbar port-default absolute" color="transparent" dark expand="md">
+      <Navbar className="port-navbar port-default absolute" color="transparent" light expand="md">
         <NavbarBrand className="port-navbar-brand" href="/">Sven</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
